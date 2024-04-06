@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ambika Ethnic | Payments</title>
+</head>
+<body>
+    <div class="container">
+    <form>
+    <h1>Payment Form</h1>
+    <h6>* indicates required fields</h6>
+    <hr>
+    <h2>User Information</h2>
+    <p>Name:* <input type="text" required></p>
+    <fieldset>
+        <legend>Gender:*</legend>
+        <div class="gender_container">
+    <p>Male<input type="radio" name="gender" id="gender"required> Female<input type="radio" name="gender" required></p>
+    </div>
+    </fieldset>
+    <p>Address:* <textarea rows="3"cols="60"required ></textarea></p>
+    <p>Email:* <input type="email" name="email" id="email" required></p>
+    <p>Pincode:* <input type="text" name="pincode" id="pincode" required></p>
+    <h2>Payment Information</h2>
+    <p>Accepted Cards: </p>
+    <div class="image-container">
+    <img src="images/Credit-Card-Icons.jpg" width="10%" height="10%">
+    </div>
+    <p>Card Type:* 
+        <select id="card" required>
+            <option value="---Select a Card---">---Select a Card---</option>
+            <option value="Visa">Visa</option>
+            <option value="Paypal">Paypal</option>
+            <option value="MasterCard">MasterCard</option>
+            <option value="AmericanExpress">AmericanExpress</option>
+          </select>  
+    </p>
+    <p>Expiry Date:* <input type="date" name="expiry" id="expiry"required></p>
+    <p>CVV:* <input type="password" name="cvv" id="cvv"required></p>
+    <input type="submit" value="Pay now" name="submit" id="submit"class="submit">
+    </form>
+    </div>
+</body>
+</html>
